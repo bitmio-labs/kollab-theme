@@ -1,3 +1,7 @@
+## [0.0.3] - Minor changes.
+
+* Minor changes.
+
 ## [0.0.2] - Minor changes.
 
 * Minor changes to support CI.
