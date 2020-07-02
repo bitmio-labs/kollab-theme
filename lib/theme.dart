@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'hex_color.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -30,13 +32,19 @@ class BitmioTheme {
     return HexColor(primary_color);
   }
 
-  BitmioTheme({
-    this.id, this.domain, this.primary_color, this.onboarding,
-    this.welcome, this.login, this.signup,
-    this.contacts, this.documents
-  });
+  BitmioTheme(
+      {this.id,
+      this.domain,
+      this.primary_color,
+      this.onboarding,
+      this.welcome,
+      this.login,
+      this.signup,
+      this.contacts,
+      this.documents});
 
-  factory BitmioTheme.fromJson(Map<String, dynamic> json) => _$BitmioThemeFromJson(json);
+  factory BitmioTheme.fromJson(Map<String, dynamic> json) =>
+      _$BitmioThemeFromJson(json);
   Map<String, dynamic> toJson() => _$BitmioThemeToJson(this);
 }
 
@@ -47,11 +55,11 @@ class OnboardingTheme {
   String start_label;
   List<OnboardingItemTheme> items;
 
-  OnboardingTheme({
-    this.continue_label, this.skip_label, this.start_label, this.items
-  });
+  OnboardingTheme(
+      {this.continue_label, this.skip_label, this.start_label, this.items});
 
-  factory OnboardingTheme.fromJson(Map<String, dynamic> json) => _$OnboardingThemeFromJson(json);
+  factory OnboardingTheme.fromJson(Map<String, dynamic> json) =>
+      _$OnboardingThemeFromJson(json);
   Map<String, dynamic> toJson() => _$OnboardingThemeToJson(this);
 }
 
@@ -62,7 +70,8 @@ class OnboardingItemTheme {
 
   OnboardingItemTheme({this.title, this.subtitle});
 
-  factory OnboardingItemTheme.fromJson(Map<String, dynamic> json) => _$OnboardingItemThemeFromJson(json);
+  factory OnboardingItemTheme.fromJson(Map<String, dynamic> json) =>
+      _$OnboardingItemThemeFromJson(json);
   Map<String, dynamic> toJson() => _$OnboardingItemThemeToJson(this);
 }
 
@@ -73,12 +82,14 @@ class WelcomeTheme {
   String signup_button_title;
   String discover_button_title;
 
-  WelcomeTheme({
-    this.hero_title, this.login_button_title,
-    this.signup_button_title, this.discover_button_title
-  });
+  WelcomeTheme(
+      {this.hero_title,
+      this.login_button_title,
+      this.signup_button_title,
+      this.discover_button_title});
 
-  factory WelcomeTheme.fromJson(Map<String, dynamic> json) => _$WelcomeThemeFromJson(json);
+  factory WelcomeTheme.fromJson(Map<String, dynamic> json) =>
+      _$WelcomeThemeFromJson(json);
   Map<String, dynamic> toJson() => _$WelcomeThemeToJson(this);
 }
 
@@ -87,11 +98,10 @@ class LoginTheme {
   String login_button_title;
   String forgot_login_button_title;
 
-  LoginTheme({
-    this.login_button_title, this.forgot_login_button_title
-  });
+  LoginTheme({this.login_button_title, this.forgot_login_button_title});
 
-  factory LoginTheme.fromJson(Map<String, dynamic> json) => _$LoginThemeFromJson(json);
+  factory LoginTheme.fromJson(Map<String, dynamic> json) =>
+      _$LoginThemeFromJson(json);
   Map<String, dynamic> toJson() => _$LoginThemeToJson(this);
 }
 
@@ -101,11 +111,11 @@ class SignupTheme {
   String privacy_link_title;
   String privacy_link;
 
-  SignupTheme({
-    this.signup_button_title, this.privacy_link_title, this.privacy_link
-  });
+  SignupTheme(
+      {this.signup_button_title, this.privacy_link_title, this.privacy_link});
 
-  factory SignupTheme.fromJson(Map<String, dynamic> json) => _$SignupThemeFromJson(json);
+  factory SignupTheme.fromJson(Map<String, dynamic> json) =>
+      _$SignupThemeFromJson(json);
   Map<String, dynamic> toJson() => _$SignupThemeToJson(this);
 }
 
@@ -115,7 +125,8 @@ class ContactsTheme {
 
   ContactsTheme({this.title});
 
-  factory ContactsTheme.fromJson(Map<String, dynamic> json) => _$ContactsThemeFromJson(json);
+  factory ContactsTheme.fromJson(Map<String, dynamic> json) =>
+      _$ContactsThemeFromJson(json);
   Map<String, dynamic> toJson() => _$ContactsThemeToJson(this);
 }
 
@@ -125,6 +136,7 @@ class DocumentsTheme {
 
   DocumentsTheme({this.title});
 
-  factory DocumentsTheme.fromJson(Map<String, dynamic> json) => _$DocumentsThemeFromJson(json);
+  factory DocumentsTheme.fromJson(Map<String, dynamic> json) =>
+      _$DocumentsThemeFromJson(json);
   Map<String, dynamic> toJson() => _$DocumentsThemeToJson(this);
 }
