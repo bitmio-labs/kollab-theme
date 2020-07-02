@@ -14,7 +14,8 @@ class BitmioTheme {
   static BitmioTheme shared;
 
   static setup() async {
-    final data = await rootBundle.loadString('assets/theme.json');
+    final data =
+        await rootBundle.loadString('packages/kollab_theme/assets/theme.json');
     shared = BitmioTheme.fromJson(json.decode(data));
   }
 
