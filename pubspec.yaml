@@ -1,6 +1,6 @@
 name: kollab_theme
 description: A new Flutter package project.
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/bitmio-labs/kollab-theme
 
 environment:
@@ -18,6 +18,5 @@ dev_dependencies:
   json_serializable: ^3.3.0
 
 flutter:
-  uses-material-design: true
   assets:
     - assets/
